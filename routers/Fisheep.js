@@ -22,7 +22,7 @@ router.get('/about', function(req, res) {
   res.send(
     '<h1> About Fisheep </h1>'+
     // '\n <img src="https://www.omgtw.com/upload/article/original/be134fac90625546754962aeef34925c.jpg" height="60%">'
-    '\n <img src="https://cornpic.com/image/uQBfR" height="60%" >'    
+    '\n <img src="https://photos.google.com/photo/AF1QipMBsBzPZC5LKKblC2vJpIcUt8jDE6jWc4gZoOoW" height="60%" >'    
     );
 });
 
