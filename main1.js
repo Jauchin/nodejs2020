@@ -7,11 +7,18 @@ app.get("/", (req, res) => {
     res.send("This is main page.");
 });
 
-app.get("/what", (req, res) => {
-    res.send("This is what page.");
+app.get("/home", (req, res) => {
+    res.send("This is home page.");
 });
 
-app.use("/user", user_router)
+app.use("/about", (req, res) => {
+    res.end("This is about page.");
+});
+
+app.use("/photo/family", (req, res) => {
+    res.send("This is photo family page.");
+});
+
 
 app.listen(port, () => {
     console.log(`server listen on port ${port}`)
