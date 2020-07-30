@@ -19,6 +19,8 @@ app.use("/photo/family", (req, res) => {
     res.send("This is photo family page.");
 });
 
+app.use("/user", user_router)
+
 
 app.listen(port, () => {
     console.log(`server listen on port ${port}`)
