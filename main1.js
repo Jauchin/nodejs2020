@@ -11,7 +11,7 @@ app.get("/what", (req, res) => {
     res.send("This is what page.");
 });
 
-// app.use("/user", user_router)
+app.use("/user", user_router)
 
 app.listen(port, () => {
     console.log(`server listen on port ${port}`)
